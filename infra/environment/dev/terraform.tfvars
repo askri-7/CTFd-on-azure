@@ -1,11 +1,8 @@
-location            = "swedencentral"
-resource_group_name = "rg-ctf-swd"
-identity_name       = "workflow-ctf"
+location            = "SwedenCentral"
+resource_group_name = "rg-CTF-spc"
+
 cloud_init_path     = "../../scripts/cloud-init.sh"
 
-federated_subjects = {
-  onapply = "repo:askri-7@247334802/CTFd-on-azure@1340879482:environment:dev"
-}
 
 tags = {
   env     = "dev"
@@ -65,7 +62,7 @@ dynamic_subnets = {
 
 
 virtual_machine_vars = {
-  size           = "Standard_B2als_v2"
+  size           = "Standard_B2ls_v2"
   admin_username = "evil"
   computer_name  = "ctfd"
 }

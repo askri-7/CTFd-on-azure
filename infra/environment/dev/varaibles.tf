@@ -13,10 +13,7 @@ variable "storage_account_name" {
   description = "Existing storage account used for Terraform state."
 }
 
-variable "identity_name" {
-  type        = string
-  description = "Existing user-assigned identity used by GitHub Actions."
-}
+
 
 variable "location" {
   type        = string
@@ -31,9 +28,7 @@ variable "cloud_init_path" {
   description = "Path to the cloud-init file, relative to the dev environment directory."
 }
 
-variable "federated_subjects" {
-  type = map(string)
-}
+
 
 variable "tags" {
   type = map(string)
